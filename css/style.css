@@ -1,0 +1,404 @@
+		
+		/* Navigation Menu */
+header{
+				height: 50px;
+				background-color: #FDAB00;
+				width: 100%;
+				}
+
+.menubar{
+	text-align: center;
+}
+
+div>a{
+	line-height: 50px;
+	margin-right: 50px;
+	color: white;
+}
+
+div>a:hover{
+	color: black;
+}
+
+		/*Animated Image*/
+
+.carousel{
+	width: 1500px;
+	height: 250px;
+	margin-left: 10%;
+	position: absolute;
+}
+.computer-product{
+	
+	display: inline-block;
+	float: left;
+	bottom: 30px;
+	margin-right: 100px;
+}
+
+.animate-bounce{
+	line-height: -5px;
+}
+/* Interactive Image Swipe */
+.wrapper{
+	width: 100%;
+	height: 280px;
+	background-color: #DDDDDD;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1.6;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+	position: relative;
+	width: 100%;
+	min-height:55vw; /* vw = viewport width */
+	overflow: hidden;
+}
+
+.layer{
+	position: absolute;
+	width: 100vw;
+	min-height: 55vw;
+	overflow: hidden;
+}
+
+.layer .content-wrap{
+	position: absolute;
+	width: 100vw;
+	min-height: 55vw;
+	
+}
+
+.layer .content-body{
+	width: 25%;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	transform: translateY(-50%);
+	color: #FFFFFF;
+}
+
+.layer img{
+	position: absolute;
+	width: 30%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.layer h1{
+	font-size: 2em;
+}
+
+.bottom{
+	background: #222;
+	z-index: 1;
+}
+
+.bottom .content-body{
+	right: 5%;
+}
+
+.bottom h1{
+	color: #FDAB00;
+}
+
+.top{
+	background: #eee;
+	color: #222;
+	z-index: 2;
+	width: 50vw;
+}
+
+.top .content-body{
+	left: 5%;
+	color: #222;
+}
+
+.handle{
+	position: absolute;
+	height: 100%;
+	display: block;
+	background-color: #FDAB00;
+	width: 5px;
+	top: 0;
+	left: 50%;
+	z-index: 3;
+}
+
+.skewed .handle{
+	top: 50%;
+	transform: rotate(30deg) translateY(-50%);
+	height: 200%;
+	transform-origin: top;
+}
+
+.skewed .top{
+	transform: skew(-30deg);
+	margin-left: -1000px;
+	width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap{
+	transform: skew(30deg);
+	margin-left: 1000px;
+}
+
+@media(max-width:768px){
+	body{
+		font-size: 75%;
+	}
+}
+
+			
+			
+		/*CSS Grid*/
+
+			.section-two{
+				height: 1300px;
+				background-color: #222;
+				position: relative;
+				z-index: -10;
+			}
+
+			.the-grid{
+				display: grid;
+				width: 1000px;
+				margin: 0 auto;	
+				grid-template-columns: 495px 495px;
+				grid-gap: 10px;
+				grid-template-rows: repeat(5, 245px);
+				z-index: 10;
+				padding-top: 10px;
+			}
+			
+			
+		
+			.medium{
+				grid-row: span 2;
+			}
+			
+			/*
+			.the-grid > div{
+				background: #eee;
+				padding: 1em;
+			}
+			*/
+			/*
+			.the-grid > div:nth-child(odd){
+				background: #ddd;
+			}
+			*/
+			.one{
+				background-image: url(../img/CSS-grid-Images/_wink_wink__by_alembic_lynxx-dbmxlf7.jpg);
+				background-size: cover;
+				background-position: center;
+			}
+			
+			.two{
+				background-image: url(../img/CSS-grid-Images/gaming-mouse-edit.png);
+				background-size: cover;
+				background-position: center;
+			}
+			
+			.three{
+				background-image: url(../img/CSS-grid-Images/keyboard-modified.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+			.four{
+				background-image: url(../img/CSS-grid-Images/gtx-1080ti.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+			.five{
+				background-image: url(../img/CSS-grid-Images/PCMasterRace-Wallpaper.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+			.six{
+				background-image: url(../img/CSS-grid-Images/RGB_ram.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+			.seven{
+				background-image: url(../img/CSS-grid-Images/zSJaTzumNDqCCikDV2Lyed.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+			.eight{
+				background-image: url(../img/CSS-grid-Images/motherboard.png);
+				background-size: auto 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+			/*section-one*/
+			
+			
+			
+			
+			.desktop{
+				z-index: -1;
+				position: absolute;
+			}
+			/*section-three*/
+
+			.section-three{
+				height: 650px;
+				width: 100%;
+				background-color: #FDAB00;
+			}
+hr{
+	width: 150px;
+	border-style: solid;
+	border-width: 2px;
+	
+}
+
+.subsection4-wrapper{
+	width: 1200px;
+	height: 80%;
+	margin: 0 auto;
+}
+
+.subsection_para1{
+	width: 300px;
+	float: left;
+	padding: 0 36.3px 0 72.6px;
+}
+
+.subsection_para2{
+	width: 300px; 
+	float: left;
+	padding: 0 36.3px 0 36.3px;
+}
+
+.subsection_para3{
+	width: 300px;
+	float: right;
+	padding: 0 72.6px 0 36.6px;
+	
+}
+
+
+
+ .event-date, .testimonal, .news, .title{
+	margin: 20px 0;
+}
+
+.icon{
+	width: 80px;
+}
+
+.facebook{
+	width: 70px;
+}
+
+.read-more{
+	display: block;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+			/*Section-four*/
+
+			.section-four{
+				width: 100%;
+				height: 300px;
+				background-color: black;
+			}
+.additional-links{
+	width: 1200px;
+	  /*remove this*/
+	padding-top: 30px;
+	margin: 0 auto;
+}
+
+ul{
+	list-style: none;
+}
+
+div ul{
+	color: white;
+}
+
+.list{
+	float: left;
+	margin-right: 50px;
+}
+
+.web-logo li{
+	display: inline-block;
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
+	background: #2D2D2D;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	border-radius: 3px;
+}
+
+.web-logo li:hover{
+	color: white;
+	background-color: #FDAB00;
+}
+
+.link-title{
+	color: white;
+	font-weight: 900;
+}
+
+select{
+	border-radius: 3px;
+	width: 180px;
+	height: 25px;
+	margin-top: 10px;
+	
+}
+
+
+				/*Footer*/
+
+			footer{
+				width: 100%;
+				height: 50px;
+				background-color: black;
+				color: white;
+				border-top:  2px solid #FDAB00;
+				
+			}
+
+.copyright{
+	text-align: center;
+	font-variant: small-caps;
+}
+
+
+
+.twitteraccount{
+	color: white;
+	margin-left: 100px;
+}
+
+.twitteraccount:hover{
+	color: #FDAB00;
+}
